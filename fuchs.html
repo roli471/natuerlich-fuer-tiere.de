@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="particles" id="particles"></div>
     <div class="forest-bg">
-        <div class="forest-layer forest-back"></div>
-        <div class="forest-layer forest-mid"></div>
-        <div class="forest-layer forest-front"></div>
+        <div class="tree tree-1">🌲</div>
+        <div class="tree tree-2">🌲</div>
+        <div class="tree tree-3">🌳</div>
         <div class="fireflies"></div>
     </div>
 
@@ -30,7 +31,7 @@
                 <li><a href="index.html">Startseite</a></li>
                 <li><a href="index.html#tiere">Tiere</a></li>
                 <li><a href="index.html#projekte">Projekte</a></li>
-                <li><a href="index.html#mitmachen">Mitmachen</a></li>
+                <li><a href="index.html#wissen">Wissen</a></li>
                 <li><a href="anmelden.html" class="btn-nav">Mitglied werden</a></li>
             </ul>
         </nav>
@@ -86,29 +87,55 @@
         </section>
 
         <section class="animal-detail-text">
-            <h2>Lebensweise und Verhalten</h2>
+            <h2>🦊 Lebensweise und Verhalten</h2>
             <p>Der Rotfuchs ist hauptsächlich dämmerungs- und nachtaktiv. Tagsüber zieht er sich in seinen Bau zurück, der oft mehrere Eingänge hat und über Generationen erweitert wird. Füchse sind ausgezeichnete Jäger und können Mäuse unter der Schneedecke orten und erbeuten.</p>
             
-            <h2>Fortpflanzung</h2>
+            <h2>💕 Fortpflanzung</h2>
             <p>Die Paarungszeit (Ranz) findet im Januar und Februar statt. Nach einer Tragzeit von etwa 52 Tagen bringt die Füchsin im März oder April durchschnittlich 4-6 Welpen zur Welt. Diese werden etwa 6 Wochen gesäugt und bleiben bis zum Herbst im Familienverband.</p>
             
-            <h2>Bedrohungen</h2>
+            <h2>⚠️ Bedrohungen</h2>
             <p>Füchse sind durch Lebensraumverlust, Straßenverkehr und Krankheiten bedroht. Die Tollwutimpfung hat zwar geholfen, aber die Staupe stellt weiterhin eine Gefahr dar. Auch die Bejagung trägt zur Dezimierung bei.</p>
             
-            <h2>Wie Sie helfen können</h2>
+            <h2>🤝 Wie Sie helfen können</h2>
             <ul class="help-list">
                 <li>✓ Werden Sie Mitglied und unterstützen Sie unsere Schutzprojekte</li>
                 <li>✓ Melden Sie verletzte Füchse der Wildtierstation</li>
                 <li>✓ Schaffen Sie füchsisgerechte Gärten mit Versteckmöglichkeiten</li>
                 <li>✓ Fahren Sie rücksichtsvoll in Waldgebieten</li>
             </ul>
+
+            <div class="fun-facts-box">
+                <h3>🎯 Spannende Fuchs-Fakten</h3>
+                <div class="facts-grid">
+                    <div class="fact-box">
+                        <span class="fact-box-icon">🎯</span>
+                        <h4>Super-Gehör</h4>
+                        <p>Können Mäusepiepsen unter 30 cm Schnee hören!</p>
+                    </div>
+                    <div class="fact-box">
+                        <span class="fact-box-icon">🏃</span>
+                        <h4>Spitzengeschwindigkeit</h4>
+                        <p>Bis zu 50 km/h im Sprint</p>
+                    </div>
+                    <div class="fact-box">
+                        <span class="fact-box-icon">🌙</span>
+                        <h4>Nachtaktiv</h4>
+                        <p>90% der Nacht sind sie unterwegs</p>
+                    </div>
+                    <div class="fact-box">
+                        <span class="fact-box-icon">🍇</span>
+                        <h4>Vielfraße</h4>
+                        <p>Fressen über 300 verschiedene Nahrungsmittel</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="donate-cta">
             <h2>Helfen Sie den Füchsen</h2>
             <p>Ihre Spende kommt direkt unseren Schutzprojekten zugute.</p>
             <div class="donate-buttons">
-                <a href="anmelden.html" class="btn-primary">Mitglied werden</a>
+                <a href="anmelden.html" class="btn-primary btn-glow">Mitglied werden</a>
                 <a href="#" class="btn-outline">Jetzt spenden</a>
             </div>
         </section>
@@ -155,5 +182,19 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Particle System
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 30; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.top = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 5 + 's';
+            particle.style.animationDuration = (Math.random() * 10 + 5) + 's';
+            particlesContainer.appendChild(particle);
+        }
+    </script>
 </body>
 </html>
