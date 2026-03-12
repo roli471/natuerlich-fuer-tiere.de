@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Einloggen - Natürlich für Tiere e.V.</title>
+    <title>Login - Natürlich für Tiere e.V.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="particles" id="particles"></div>
     <div class="forest-bg">
-        <div class="forest-layer forest-back"></div>
-        <div class="forest-layer forest-mid"></div>
-        <div class="forest-layer forest-front"></div>
+        <div class="tree tree-1">🌲</div>
+        <div class="tree tree-2">🌲</div>
+        <div class="tree tree-3">🌳</div>
         <div class="fireflies"></div>
     </div>
 
@@ -30,45 +31,71 @@
                 <li><a href="index.html">Startseite</a></li>
                 <li><a href="index.html#tiere">Tiere</a></li>
                 <li><a href="index.html#projekte">Projekte</a></li>
-                <li><a href="index.html#mitmachen">Mitmachen</a></li>
-                <li><a href="anmelden.html" class="btn-nav">Mitglied werden</a></li>
+                <li><a href="anmelden.html">Mitglied werden</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="register-section">
-            <div class="register-container">
-                <div class="register-header">
-                    <div class="register-animals">
-                        <span>🦊</span><span>🦌</span><span>🦉</span>
+        <section class="auth-section">
+            <div class="auth-container auth-login">
+                <div class="auth-header">
+                    <div class="auth-animals">
+                        <span class="auth-animal float">🦊</span>
+                        <span class="auth-animal float delay-1">🦌</span>
+                        <span class="auth-animal float delay-2">🦉</span>
                     </div>
-                    <h2>Willkommen zurück</h2>
-                    <p class="register-slogan">Loggen Sie sich in Ihr Mitgliedskonto ein</p>
+                    <h2>🎉 Willkommen zurück!</h2>
+                    <p class="auth-slogan">Loggen Sie sich in Ihr Mitgliedskonto ein</p>
                 </div>
                 
-                <form class="register-form" action="#" method="post">
+                <form class="auth-form" action="#" method="post">
                     <div class="form-group">
-                        <label for="email">E-Mail-Adresse</label>
+                        <label for="email">
+                            <span class="label-icon">📧</span>
+                            E-Mail-Adresse
+                        </label>
                         <input type="email" id="email" name="email" required placeholder="ihre.email@beispiel.de">
                     </div>
 
                     <div class="form-group">
-                        <label for="passwort">Passwort</label>
+                        <label for="passwort">
+                            <span class="label-icon">🔒</span>
+                            Passwort
+                        </label>
                         <input type="password" id="passwort" name="passwort" required placeholder="Ihr Passwort">
                     </div>
 
-                    <div class="form-group checkbox-group">
-                        <input type="checkbox" id="remember" name="remember">
-                        <label for="remember">Angemeldet bleiben</label>
+                    <div class="form-options">
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember">Angemeldet bleiben</label>
+                        </div>
+                        <a href="#" class="forgot-password">Passwort vergessen?</a>
                     </div>
 
-                    <button type="submit" class="btn-submit">🌿 Einloggen</button>
+                    <button type="submit" class="btn-submit">
+                        <span class="btn-icon">🌿</span>
+                        Einloggen
+                    </button>
                 </form>
 
-                <div class="login-hint">
+                <div class="auth-footer">
+                    <div class="auth-divider">
+                        <span>Oder</span>
+                    </div>
+                    <div class="social-login">
+                        <a href="#" class="social-login-btn google">
+                            <span class="social-icon">🔍</span>
+                            Mit Google
+                        </a>
+                        <a href="#" class="social-login-btn facebook">
+                            <span class="social-icon">📘</span>
+                            Mit Facebook
+                        </a>
+                    </div>
                     <p>Noch kein Mitglied? <a href="anmelden.html">Jetzt registrieren</a></p>
-                    <p><a href="#">Passwort vergessen?</a></p>
+                    <p class="member-perk">🌟 Mitglieder erhalten exklusive Updates!</p>
                 </div>
             </div>
         </section>
@@ -115,5 +142,18 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 30; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.top = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 5 + 's';
+            particle.style.animationDuration = (Math.random() * 10 + 5) + 's';
+            particlesContainer.appendChild(particle);
+        }
+    </script>
 </body>
 </html>

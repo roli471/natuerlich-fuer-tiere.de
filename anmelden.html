@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="particles" id="particles"></div>
     <div class="forest-bg">
-        <div class="forest-layer forest-back"></div>
-        <div class="forest-layer forest-mid"></div>
-        <div class="forest-layer forest-front"></div>
+        <div class="tree tree-1">🌲</div>
+        <div class="tree tree-2">🌲</div>
+        <div class="tree tree-3">🌳</div>
         <div class="fireflies"></div>
     </div>
 
@@ -30,72 +31,108 @@
                 <li><a href="index.html">Startseite</a></li>
                 <li><a href="index.html#tiere">Tiere</a></li>
                 <li><a href="index.html#projekte">Projekte</a></li>
-                <li><a href="index.html#mitmachen">Mitmachen</a></li>
-                <li><a href="anmelden.html" class="btn-nav">Mitglied werden</a></li>
+                <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="register-section">
-            <div class="register-container">
-                <div class="register-header">
-                    <div class="register-animals">
-                        <span>🦊</span><span>🦌</span><span>🦉</span><span>🐰</span>
+        <section class="auth-section">
+            <div class="auth-container">
+                <div class="auth-header">
+                    <div class="auth-animals">
+                        <span class="auth-animal float">🦊</span>
+                        <span class="auth-animal float delay-1">🦌</span>
+                        <span class="auth-animal float delay-2">🦉</span>
+                        <span class="auth-animal float delay-3">🐰</span>
+                        <span class="auth-animal float delay-4">🦔</span>
                     </div>
-                    <h2>Mitglied werden</h2>
-                    <p class="register-slogan">Gemeinsam für Wildtiere und Naturschutz</p>
+                    <h2>🌟 Mitglied werden</h2>
+                    <p class="auth-slogan">Werden Sie Teil unserer Tierschutz-Familie!</p>
+                    <div class="member-benefits-preview">
+                        <div class="benefit-badge">✓ Exklusive Updates</div>
+                        <div class="benefit-badge">✓ Veranstaltungen</div>
+                        <div class="benefit-badge">✓ Steuerabsetzbar</div>
+                    </div>
                 </div>
                 
-                <form class="register-form" action="#" method="post">
+                <form class="auth-form" action="#" method="post">
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="vorname">Vorname *</label>
+                            <label for="vorname">
+                                <span class="label-icon">👤</span>
+                                Vorname *
+                            </label>
                             <input type="text" id="vorname" name="vorname" required placeholder="Ihr Vorname">
                         </div>
 
                         <div class="form-group">
-                            <label for="nachname">Nachname *</label>
+                            <label for="nachname">
+                                <span class="label-icon">👤</span>
+                                Nachname *
+                            </label>
                             <input type="text" id="nachname" name="nachname" required placeholder="Ihr Nachname">
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="email">E-Mail-Adresse *</label>
+                        <label for="email">
+                            <span class="label-icon">📧</span>
+                            E-Mail-Adresse *
+                        </label>
                         <input type="email" id="email" name="email" required placeholder="ihre.email@beispiel.de">
                     </div>
 
                     <div class="form-group">
-                        <label for="telefon">Telefon (optional)</label>
+                        <label for="telefon">
+                            <span class="label-icon">📞</span>
+                            Telefon (optional)
+                        </label>
                         <input type="tel" id="telefon" name="telefon" placeholder="+49 ...">
                     </div>
 
                     <div class="form-group">
-                        <label for="passwort">Passwort *</label>
+                        <label for="passwort">
+                            <span class="label-icon">🔒</span>
+                            Passwort *
+                        </label>
                         <input type="password" id="passwort" name="passwort" required placeholder="Mindestens 8 Zeichen">
+                        <div class="password-strength">
+                            <div class="strength-bar"></div>
+                        </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="passwort-wiederholen">Passwort wiederholen *</label>
+                        <label for="passwort-wiederholen">
+                            <span class="label-icon">🔒</span>
+                            Passwort wiederholen *
+                        </label>
                         <input type="password" id="passwort-wiederholen" name="passwort-wiederholen" required placeholder="Passwort bestätigen">
                     </div>
 
                     <div class="form-group checkbox-group">
                         <input type="checkbox" id="newsletter" name="newsletter" checked>
-                        <label for="newsletter">Ich möchte regelmäßig News über unsere Tierschutzarbeit erhalten</label>
+                        <label for="newsletter">📬 Ich möchte regelmäßig News über unsere Tierschutzarbeit erhalten</label>
                     </div>
 
                     <div class="form-group checkbox-group">
                         <input type="checkbox" id="datenschutz" name="datenschutz" required>
-                        <label for="datenschutz">Ich habe die Datenschutzerklärung gelesen und stimme zu *</label>
+                        <label for="datenschutz">📋 Ich habe die Datenschutzerklärung gelesen und stimme zu *</label>
                     </div>
 
-                    <button type="submit" class="btn-submit">🌿 Jetzt Mitglied werden</button>
+                    <button type="submit" class="btn-submit">
+                        <span class="btn-icon">🌿</span>
+                        Jetzt Mitglied werden
+                        <span class="btn-confetti">🎉</span>
+                    </button>
                 </form>
 
-                <div class="login-hint">
+                <div class="auth-footer">
+                    <div class="member-count">
+                        <span class="member-number">2.500+</span>
+                        <span class="member-text">bereits Mitglieder</span>
+                    </div>
                     <p>Bereits Mitglied? <a href="login.html">Hier einloggen</a></p>
-                    <p class="member-benefit">✓ Über 2.500 Mitglieder vertrauen uns</p>
                 </div>
             </div>
         </section>
@@ -142,5 +179,40 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Particle System
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 30; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.top = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 5 + 's';
+            particle.style.animationDuration = (Math.random() * 10 + 5) + 's';
+            particlesContainer.appendChild(particle);
+        }
+
+        // Password Strength
+        const password = document.getElementById('passwort');
+        const strengthBar = document.querySelector('.strength-bar');
+        
+        password.addEventListener('input', function() {
+            const value = this.value;
+            let strength = 0;
+            
+            if (value.length >= 8) strength++;
+            if (value.match(/[a-z]/)) strength++;
+            if (value.match(/[A-Z]/)) strength++;
+            if (value.match(/[0-9]/)) strength++;
+            if (value.match(/[^a-zA-Z0-9]/)) strength++;
+            
+            const colors = ['#ff4444', '#ff8800', '#ffcc00', '#88cc00', '#44cc44'];
+            const widths = ['20%', '40%', '60%', '80%', '100%'];
+            
+            strengthBar.style.width = widths[strength - 1] || '0%';
+            strengthBar.style.background = colors[strength - 1] || '#ff4444';
+        });
+    </script>
 </body>
 </html>
