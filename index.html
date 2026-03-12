@@ -5,12 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natürlich für Tiere - Wald, Wiese, Wildtiere</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="forest-bg">
+        <div class="tree tree-1">🌲</div>
+        <div class="tree tree-2">🌲</div>
+        <div class="tree tree-3">🌲</div>
+        <div class="tree tree-4">🌳</div>
+        <div class="tree tree-5">🌲</div>
+        <div class="bush bush-1">🌿</div>
+        <div class="bush bush-2">🌿</div>
+        <div class="bush bush-3">🌿</div>
+    </div>
+
     <header>
         <nav class="navigation">
             <div class="logo">
-                <span class="logo-icon">🌿</span>
+                <span class="logo-icon">🦊</span>
                 <h1>Natürlich für Tiere</h1>
             </div>
             <ul class="nav-links">
@@ -27,67 +41,163 @@
         <!-- Hero Section mit Slogan -->
         <section class="hero">
             <div class="hero-content">
-                <div class="hero-animals">
-                    <span class="animal-icon">🦊</span>
-                    <span class="animal-icon">🦌</span>
-                    <span class="animal-icon">🦉</span>
-                    <span class="animal-icon">🐰</span>
-                    <span class="animal-icon">🦔</span>
+                <div class="hero-badge">
+                    <span class="badge-icon">🌿</span>
+                    <span>Naturschutz Projekt</span>
                 </div>
                 <h2 class="slogan-main">Wald, Wiese, Wildtiere</h2>
                 <div class="slogan-divider"></div>
                 <p class="slogan-sub">Wir wollen sie bewahren</p>
-                <a href="anmelden.html" class="btn-hero">Jetzt mitmachen!</a>
+                <p class="hero-description">Entdecke die faszinierende Welt unserer einheimischen Wildtiere und hilf uns, ihre natürlichen Lebensräume zu schützen.</p>
+                <div class="hero-buttons">
+                    <a href="anmelden.html" class="btn-hero">🌟 Jetzt mitmachen!</a>
+                    <a href="#tiere" class="btn-hero-outline">Tiere entdecken ↓</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Tierarten</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Gerettete Tiere</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Mitglieder</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1470093851219-69951fcbb533?w=600&h=400&fit=crop" alt="Fuchs im Wald" class="hero-img">
+                    <div class="image-overlay">
+                        <span>🦊 Beschütze den Fuchs</span>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Tiere Section -->
         <section id="tiere" class="animals-section">
-            <h2>Unsere Schützlinge</h2>
+            <div class="section-header">
+                <span class="section-badge">🐾 Unsere Schützlinge</span>
+                <h2>Lerne die Waldbewohner kennen</h2>
+                <p class="section-description">Diese wunderschönen Tiere leben in unseren Wäldern und Wiesen und brauchen unseren Schutz.</p>
+            </div>
+            
             <div class="animal-cards">
-                <div class="animal-card">
-                    <div class="animal-card-image">🦊</div>
-                    <h3>Fuchs</h3>
-                    <p>Der schlaue Fuchs lebt in Wäldern und ist ein wichtiger Teil unseres Ökosystems.</p>
+                <div class="animal-card featured">
+                    <div class="animal-card-image">
+                        <img src="https://images.unsplash.com/photo-1474511321-7210e1f44dd3?w=400&h=300&fit=crop" alt="Fuchs">
+                        <div class="animal-badge">Beliebt</div>
+                    </div>
+                    <div class="animal-card-content">
+                        <h3>🦊 Fuchs</h3>
+                        <p class="animal-latin">Vulpes vulpes</p>
+                        <p>Der schlaue Fuchs lebt in Wäldern und ist ein wichtiger Teil unseres Ökosystems. Füchse sind nachtaktive Einzelgänger.</p>
+                        <div class="animal-info">
+                            <span>📍 Europa, Asien</span>
+                            <span>⚖️ 5-8 kg</span>
+                            <span>⏱️ 3-4 Jahre</span>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="animal-card">
-                    <div class="animal-card-image">🦌</div>
-                    <h3>Reh</h3>
-                    <p>Rehe brauchen ruhige Rückzugsorte in Wäldern und auf Wiesen.</p>
+                    <div class="animal-card-image">
+                        <img src="https://images.unsplash.com/photo-1484406566174-9da000ce6478?w=400&h=300&fit=crop" alt="Reh">
+                    </div>
+                    <div class="animal-card-content">
+                        <h3>🦌 Reh</h3>
+                        <p class="animal-latin">Capreolus capreolus</p>
+                        <p>Rehe brauchen ruhige Rückzugsorte in Wäldern und auf Wiesen. Sie sind scheue Pflanzenfresser.</p>
+                        <div class="animal-info">
+                            <span>📍 Europa</span>
+                            <span>⚖️ 15-25 kg</span>
+                            <span>⏱️ 10-12 Jahre</span>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="animal-card">
-                    <div class="animal-card-image">🦉</div>
-                    <h3>Eule</h3>
-                    <p>Eulen schützen unsere Wälder vor Nagetierplagen - wichtige Jäger der Nacht.</p>
+                    <div class="animal-card-image">
+                        <img src="https://images.unsplash.com/photo-1544265438-7e63f7c8e6e8?w=400&h=300&fit=crop" alt="Eule">
+                    </div>
+                    <div class="animal-card-content">
+                        <h3>🦉 Eule</h3>
+                        <p class="animal-latin">Strigiformes</p>
+                        <p>Eulen schützen unsere Wälder vor Nagetierplagen - wichtige Jäger der Nacht mit lautlosem Flug.</p>
+                        <div class="animal-info">
+                            <span>📍 Weltweit</span>
+                            <span>⚖️ 0.1-4 kg</span>
+                            <span>⏱️ 5-20 Jahre</span>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="animal-card">
-                    <div class="animal-card-image">🐰</div>
-                    <h3>Hase</h3>
-                    <p>Feldhasen brauchen vielfältige Wiesenlandschaften zum Überleben.</p>
+                    <div class="animal-card-image">
+                        <img src="https://images.unsplash.com/photo-1591385539200-1c1f7f074d66?w=400&h=300&fit=crop" alt="Hase">
+                    </div>
+                    <div class="animal-card-content">
+                        <h3>🐰 Feldhase</h3>
+                        <p class="animal-latin">Lepus europaeus</p>
+                        <p>Feldhasen brauchen vielfältige Wiesenlandschaften zum Überleben. Sie sind flinke Pflanzenfresser.</p>
+                        <div class="animal-info">
+                            <span>📍 Europa</span>
+                            <span>⚖️ 3-5 kg</span>
+                            <span>⏱️ 7-9 Jahre</span>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="animal-card">
-                    <div class="animal-card-image">🦔</div>
-                    <h3>Igel</h3>
-                    <p>Igel sind Nützlinge, die in naturnahen Gärten und Hecken leben.</p>
+                    <div class="animal-card-image">
+                        <img src="https://images.unsplash.com/photo-1541336032412-2048a678540d?w=400&h=300&fit=crop" alt="Igel">
+                    </div>
+                    <div class="animal-card-content">
+                        <h3>🦔 Igel</h3>
+                        <p class="animal-latin">Erinaceidae</p>
+                        <p>Igel sind Nützlinge, die in naturnahen Gärten und Hecken leben. Bei Gefahr rollen sie sich zusammen.</p>
+                        <div class="animal-info">
+                            <span>📍 Europa, Asien</span>
+                            <span>⚖️ 0.6-1.2 kg</span>
+                            <span>⏱️ 3-5 Jahre</span>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="animal-card">
-                    <div class="animal-card-image">🦅</div>
-                    <h3>Adler</h3>
-                    <p>Greifvögel sind Spitzenprädatoren und unverzichtbar für die Natur.</p>
+                    <div class="animal-card-image">
+                        <img src="https://images.unsplash.com/photo-1611004098914-9c188c1f4e8c?w=400&h=300&fit=crop" alt="Adler">
+                    </div>
+                    <div class="animal-card-content">
+                        <h3>🦅 Adler</h3>
+                        <p class="animal-latin">Aquila chrysaetos</p>
+                        <p>Greifvögel sind Spitzenprädatoren und unverzichtbar für die Natur. Sie haben eine enorme Spannweite.</p>
+                        <div class="animal-info">
+                            <span>📍 Europa, Asien</span>
+                            <span>⚖️ 3-6 kg</span>
+                            <span>⏱️ 20-30 Jahre</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Werbeanzeige Section -->
         <section id="werbeanzeige" class="ad-section">
-            <div class="ad-header">
+            <div class="section-header">
+                <span class="section-badge-light">📚 Für den Unterricht</span>
                 <h2>Werbeanzeige-Analyse</h2>
-                <p class="ad-subtitle">Verstehe, wie Tierschutz-Werbung funktioniert</p>
+                <p class="section-description">Verstehe, wie Tierschutz-Werbung funktioniert und welche Methoden sie verwendet.</p>
             </div>
             
             <div class="ad-container">
                 <!-- Beispiel Werbeanzeige -->
                 <div class="ad-example">
+                    <div class="ad-label">Beispiel-Werbeanzeige</div>
                     <div class="ad-banner">
                         <div class="ad-banner-header">
                             <span class="ad-logo">🌿 Natürlich für Tiere</span>
@@ -149,9 +259,13 @@
         <!-- Call to Action Section -->
         <section class="cta-section">
             <div class="cta-content">
+                <div class="cta-icon">🌲</div>
                 <h2>Werde Teil der Bewegung!</h2>
-                <p>Gemeinsam können wir die Natur und ihre Bewohner schützen.</p>
-                <a href="anmelden.html" class="btn-cta">Jetzt registrieren</a>
+                <p>Gemeinsam können wir die Natur und ihre Bewohner schützen. Jede Unterstützung zählt!</p>
+                <div class="cta-buttons">
+                    <a href="anmelden.html" class="btn-cta">Jetzt registrieren</a>
+                    <a href="#tiere" class="btn-cta-outline">Mehr erfahren</a>
+                </div>
             </div>
         </section>
     </main>
@@ -161,8 +275,14 @@
             <div class="footer-animals">
                 <span>🦊</span><span>🦌</span><span>🦉</span><span>🐰</span><span>🦔</span><span>🦅</span>
             </div>
-            <p><strong>Natürlich für Tiere</strong></p>
-            <p>Wald, Wiese, Wildtiere – Wir wollen sie bewahren</p>
+            <h3>Natürlich für Tiere</h3>
+            <p class="footer-slogan">Wald, Wiese, Wildtiere – Wir wollen sie bewahren</p>
+            <div class="footer-links">
+                <a href="index.html">Startseite</a>
+                <a href="#tiere">Tiere</a>
+                <a href="#werbeanzeige">Werbeanzeige</a>
+                <a href="anmelden.html">Anmelden</a>
+            </div>
             <p class="footer-note">&copy; 2026 – Eine Bildungswebsite für Deutschunterricht</p>
             <p class="footer-note">Thema: Werbeanzeige-Analyse und Tierschutz</p>
         </div>
