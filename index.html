@@ -3,76 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natürlich für Tiere - Wald, Wiese, Wildtiere</title>
+    <title>Natürlich für Tiere e.V. | Wald, Wiese, Wildtiere schützen</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="forest-bg">
-        <div class="tree tree-1">🌲</div>
-        <div class="tree tree-2">🌲</div>
-        <div class="tree tree-3">🌲</div>
-        <div class="tree tree-4">🌳</div>
-        <div class="tree tree-5">🌲</div>
-        <div class="bush bush-1">🌿</div>
-        <div class="bush bush-2">🌿</div>
-        <div class="bush bush-3">🌿</div>
+        <div class="forest-layer forest-back"></div>
+        <div class="forest-layer forest-mid"></div>
+        <div class="forest-layer forest-front"></div>
+        <div class="fireflies"></div>
     </div>
 
     <header>
         <nav class="navigation">
             <div class="logo">
-                <span class="logo-icon">🦊</span>
-                <h1>Natürlich für Tiere</h1>
+                <div class="logo-symbol">🌿</div>
+                <div class="logo-text">
+                    <span class="logo-main">Natürlich für Tiere</span>
+                    <span class="logo-sub">e.V. Tierschutz</span>
+                </div>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Startseite</a></li>
-                <li><a href="#slogan">Slogan</a></li>
                 <li><a href="#tiere">Tiere</a></li>
-                <li><a href="#werbeanzeige">Werbeanzeige</a></li>
-                <li><a href="anmelden.html" class="btn-nav">Anmelden</a></li>
+                <li><a href="#projekte">Projekte</a></li>
+                <li><a href="#mitmachen">Mitmachen</a></li>
+                <li><a href="anmelden.html" class="btn-nav">Mitglied werden</a></li>
             </ul>
+            <button class="mobile-menu-btn">☰</button>
         </nav>
     </header>
 
     <main>
-        <!-- Hero Section mit Slogan -->
+        <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
                 <div class="hero-badge">
-                    <span class="badge-icon">🌿</span>
-                    <span>Naturschutz Projekt</span>
+                    <span class="badge-icon">★</span>
+                    <span>Seit 2019 im Einsatz für Wildtiere</span>
                 </div>
-                <h2 class="slogan-main">Wald, Wiese, Wildtiere</h2>
-                <div class="slogan-divider"></div>
-                <p class="slogan-sub">Wir wollen sie bewahren</p>
-                <p class="hero-description">Entdecke die faszinierende Welt unserer einheimischen Wildtiere und hilf uns, ihre natürlichen Lebensräume zu schützen.</p>
-                <div class="hero-buttons">
-                    <a href="anmelden.html" class="btn-hero">🌟 Jetzt mitmachen!</a>
-                    <a href="#tiere" class="btn-hero-outline">Tiere entdecken ↓</a>
+                <h1 class="hero-title">Wald, Wiese, Wildtiere</h1>
+                <div class="title-divider"></div>
+                <p class="hero-subtitle">Wir wollen sie bewahren</p>
+                <p class="hero-text">Wir setzen uns leidenschaftlich für den Schutz einheimischer Wildtiere und ihrer natürlichen Lebensräume ein. Gemeinsam schaffen wir eine Zukunft, in der Mensch und Tier im Einklang leben.</p>
+                <div class="hero-cta">
+                    <a href="anmelden.html" class="btn-primary">🌟 Jetzt Mitglied werden</a>
+                    <a href="#tiere" class="btn-secondary">Unsere Schützlinge</a>
                 </div>
                 <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">Tierarten</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">1000+</span>
-                        <span class="stat-label">Gerettete Tiere</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">500+</span>
+                    <div class="stat-item">
+                        <span class="stat-value">2.500+</span>
                         <span class="stat-label">Mitglieder</span>
                     </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-card">
-                    <img src="https://images.unsplash.com/photo-1470093851219-69951fcbb533?w=600&h=400&fit=crop" alt="Fuchs im Wald" class="hero-img">
-                    <div class="image-overlay">
-                        <span>🦊 Beschütze den Fuchs</span>
+                    <div class="stat-item">
+                        <span class="stat-value">850+</span>
+                        <span class="stat-label">Gerettete Tiere</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">12</span>
+                        <span class="stat-label">Schutzgebiete</span>
                     </div>
                 </div>
             </div>
@@ -81,190 +73,187 @@
         <!-- Tiere Section -->
         <section id="tiere" class="animals-section">
             <div class="section-header">
-                <span class="section-badge">🐾 Unsere Schützlinge</span>
-                <h2>Lerne die Waldbewohner kennen</h2>
-                <p class="section-description">Diese wunderschönen Tiere leben in unseren Wäldern und Wiesen und brauchen unseren Schutz.</p>
+                <span class="section-tag">🐾 Unsere Schützlinge</span>
+                <h2>Die Bewohner unserer Wälder</h2>
+                <p>Lernen Sie die faszinierenden Wildtiere kennen, für die wir uns täglich einsetzen.</p>
             </div>
             
-            <div class="animal-cards">
-                <div class="animal-card featured">
-                    <div class="animal-card-image">
-                        <img src="https://images.unsplash.com/photo-1474511321-7210e1f44dd3?w=400&h=300&fit=crop" alt="Fuchs">
-                        <div class="animal-badge">Beliebt</div>
+            <div class="animal-grid">
+                <div class="animal-card large">
+                    <div class="animal-img-wrapper">
+                        <img src="https://images.pexels.com/photos/3825006/pexels-photo-3825006.jpeg?w=600" alt="Fuchs">
+                        <div class="animal-status">✓ Geschützt</div>
                     </div>
-                    <div class="animal-card-content">
-                        <h3>🦊 Fuchs</h3>
-                        <p class="animal-latin">Vulpes vulpes</p>
-                        <p>Der schlaue Fuchs lebt in Wäldern und ist ein wichtiger Teil unseres Ökosystems. Füchse sind nachtaktive Einzelgänger.</p>
-                        <div class="animal-info">
-                            <span>📍 Europa, Asien</span>
+                    <div class="animal-info">
+                        <h3>Rotfuchs</h3>
+                        <span class="latin-name">Vulpes vulpes</span>
+                        <p>Der Rotfuchs ist ein wichtiger Bestandteil unseres Ökosystems. Als Kulturfolger hat er sich hervorragend an die Nähe des Menschen angepasst.</p>
+                        <div class="animal-details">
+                            <span>📍 Europa & Asien</span>
                             <span>⚖️ 5-8 kg</span>
-                            <span>⏱️ 3-4 Jahre</span>
+                            <span>🍖 Allesfresser</span>
                         </div>
+                        <a href="#" class="btn-small">Mehr erfahren →</a>
                     </div>
                 </div>
 
                 <div class="animal-card">
-                    <div class="animal-card-image">
-                        <img src="https://images.unsplash.com/photo-1484406566174-9da000ce6478?w=400&h=300&fit=crop" alt="Reh">
+                    <div class="animal-img-wrapper">
+                        <img src="https://images.pexels.com/photos/1699167/pexels-photo-1699167.jpeg?w=600" alt="Reh">
                     </div>
-                    <div class="animal-card-content">
-                        <h3>🦌 Reh</h3>
-                        <p class="animal-latin">Capreolus capreolus</p>
-                        <p>Rehe brauchen ruhige Rückzugsorte in Wäldern und auf Wiesen. Sie sind scheue Pflanzenfresser.</p>
-                        <div class="animal-info">
-                            <span>📍 Europa</span>
-                            <span>⚖️ 15-25 kg</span>
-                            <span>⏱️ 10-12 Jahre</span>
-                        </div>
+                    <div class="animal-info">
+                        <h3>Rehwild</h3>
+                        <span class="latin-name">Capreolus capreolus</span>
+                        <p>Rehe sind die häufigsten Großsäuger in deutschen Wäldern und brauchen unsere Unterstützung.</p>
+                        <a href="#" class="btn-small">Mehr erfahren →</a>
                     </div>
                 </div>
 
                 <div class="animal-card">
-                    <div class="animal-card-image">
-                        <img src="https://images.unsplash.com/photo-1544265438-7e63f7c8e6e8?w=400&h=300&fit=crop" alt="Eule">
+                    <div class="animal-img-wrapper">
+                        <img src="https://images.pexels.com/photos/6168061/pexels-photo-6168061.jpeg?w=600" alt="Eule">
                     </div>
-                    <div class="animal-card-content">
-                        <h3>🦉 Eule</h3>
-                        <p class="animal-latin">Strigiformes</p>
-                        <p>Eulen schützen unsere Wälder vor Nagetierplagen - wichtige Jäger der Nacht mit lautlosem Flug.</p>
-                        <div class="animal-info">
-                            <span>📍 Weltweit</span>
-                            <span>⚖️ 0.1-4 kg</span>
-                            <span>⏱️ 5-20 Jahre</span>
-                        </div>
+                    <div class="animal-info">
+                        <h3>Waldkauz</h3>
+                        <span class="latin-name">Strix aluco</span>
+                        <p>Der Waldkauz ist eine der häufigsten Eulenarten und ein wichtiger Regulator im Wald.</p>
+                        <a href="#" class="btn-small">Mehr erfahren →</a>
                     </div>
                 </div>
 
                 <div class="animal-card">
-                    <div class="animal-card-image">
-                        <img src="https://images.unsplash.com/photo-1591385539200-1c1f7f074d66?w=400&h=300&fit=crop" alt="Hase">
+                    <div class="animal-img-wrapper">
+                        <img src="https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg?w=600" alt="Hase">
                     </div>
-                    <div class="animal-card-content">
-                        <h3>🐰 Feldhase</h3>
-                        <p class="animal-latin">Lepus europaeus</p>
-                        <p>Feldhasen brauchen vielfältige Wiesenlandschaften zum Überleben. Sie sind flinke Pflanzenfresser.</p>
-                        <div class="animal-info">
-                            <span>📍 Europa</span>
-                            <span>⚖️ 3-5 kg</span>
-                            <span>⏱️ 7-9 Jahre</span>
-                        </div>
+                    <div class="animal-info">
+                        <h3>Feldhase</h3>
+                        <span class="latin-name">Lepus europaeus</span>
+                        <p>Feldhasen sind auf strukturreiche Landschaften angewiesen und zunehmend bedroht.</p>
+                        <a href="#" class="btn-small">Mehr erfahren →</a>
                     </div>
                 </div>
 
                 <div class="animal-card">
-                    <div class="animal-card-image">
-                        <img src="https://images.unsplash.com/photo-1541336032412-2048a678540d?w=400&h=300&fit=crop" alt="Igel">
+                    <div class="animal-img-wrapper">
+                        <img src="https://images.pexels.com/photos/106508/pexels-photo-106508.jpeg?w=600" alt="Igel">
                     </div>
-                    <div class="animal-card-content">
-                        <h3>🦔 Igel</h3>
-                        <p class="animal-latin">Erinaceidae</p>
-                        <p>Igel sind Nützlinge, die in naturnahen Gärten und Hecken leben. Bei Gefahr rollen sie sich zusammen.</p>
-                        <div class="animal-info">
-                            <span>📍 Europa, Asien</span>
-                            <span>⚖️ 0.6-1.2 kg</span>
-                            <span>⏱️ 3-5 Jahre</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="animal-card">
-                    <div class="animal-card-image">
-                        <img src="https://images.unsplash.com/photo-1611004098914-9c188c1f4e8c?w=400&h=300&fit=crop" alt="Adler">
-                    </div>
-                    <div class="animal-card-content">
-                        <h3>🦅 Adler</h3>
-                        <p class="animal-latin">Aquila chrysaetos</p>
-                        <p>Greifvögel sind Spitzenprädatoren und unverzichtbar für die Natur. Sie haben eine enorme Spannweite.</p>
-                        <div class="animal-info">
-                            <span>📍 Europa, Asien</span>
-                            <span>⚖️ 3-6 kg</span>
-                            <span>⏱️ 20-30 Jahre</span>
-                        </div>
+                    <div class="animal-info">
+                        <h3>Braunbrustigel</h3>
+                        <span class="latin-name">Erinaceus europaeus</span>
+                        <p>Igel sind nützliche Gartenbewohner, die unseren Schutz benötigen.</p>
+                        <a href="#" class="btn-small">Mehr erfahren →</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Werbeanzeige Section -->
-        <section id="werbeanzeige" class="ad-section">
+        <!-- Projekte Section -->
+        <section id="projekte" class="projects-section">
             <div class="section-header">
-                <span class="section-badge-light">📚 Für den Unterricht</span>
-                <h2>Werbeanzeige-Analyse</h2>
-                <p class="section-description">Verstehe, wie Tierschutz-Werbung funktioniert und welche Methoden sie verwendet.</p>
+                <span class="section-tag">🌲 Unsere Arbeit</span>
+                <h2>Aktuelle Projekte</h2>
+                <p>Entdecken Sie, wie wir konkret Wildtiere und ihre Lebensräume schützen.</p>
             </div>
             
-            <div class="ad-container">
-                <!-- Beispiel Werbeanzeige -->
-                <div class="ad-example">
-                    <div class="ad-label">Beispiel-Werbeanzeige</div>
-                    <div class="ad-banner">
-                        <div class="ad-banner-header">
-                            <span class="ad-logo">🌿 Natürlich für Tiere</span>
-                        </div>
-                        <div class="ad-main-content">
-                            <h3 class="ad-headline">"Rette das Leben eines Wildtiers – Werde noch heute Pate!"</h3>
-                            <div class="ad-animals-showcase">
-                                <span>🦊</span><span>🦌</span><span>🦉</span><span>🐰</span>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?w=600" alt="Waldprojekt">
+                    </div>
+                    <div class="project-content">
+                        <h3>🌳 Lebensraum Wald</h3>
+                        <p>Wir kaufen und schützen Waldflächen, um sie als Rückzugsorte für Wildtiere zu erhalten.</p>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
                             </div>
-                            <p class="ad-body-text">Jeden Tag verlieren hunderte von Wildtieren ihren Lebensraum. Mit nur <strong>5€ im Monat</strong> kannst du helfen!</p>
-                            <div class="ad-benefits">
-                                <div class="benefit-item">✓ Direkte Hilfe für verletzte Tiere</div>
-                                <div class="benefit-item">✓ Schutz von natürlichen Lebensräumen</div>
-                                <div class="benefit-item">✓ Regelmäßige Updates über deine Patenschaft</div>
-                            </div>
-                            <button class="ad-cta-button">Jetzt Tierpate werden!</button>
-                            <p class="ad-disclaimer">*Jeder Beitrag zählt – kündbar jederzeit</p>
+                            <span>75% finanziert</span>
                         </div>
+                        <a href="#" class="btn-project">Projekt unterstützen</a>
                     </div>
                 </div>
 
-                <!-- Analyseaufgaben -->
-                <div class="analysis-section">
-                    <h3>📋 Analyseaufgaben</h3>
-                    <div class="analysis-grid">
-                        <div class="analysis-item">
-                            <div class="analysis-number">1</div>
-                            <div class="analysis-content">
-                                <strong>Appell</strong>
-                                <p>Welche Gefühle spricht die Werbeanzeige an?</p>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.pexels.com/photos/1661179/pexels-photo-1661179.jpeg?w=600" alt="Wiesenprojekt">
+                    </div>
+                    <div class="project-content">
+                        <h3>🌻 Blühende Wiesen</h3>
+                        <p>Wir verwandeln monotone Flächen in artenreiche Wiesen für Insekten und Wildtiere.</p>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
                             </div>
+                            <span>60% finanziert</span>
                         </div>
-                        <div class="analysis-item">
-                            <div class="analysis-number">2</div>
-                            <div class="analysis-content">
-                                <strong>Zielgruppe</strong>
-                                <p>An wen richtet sich die Werbung?</p>
+                        <a href="#" class="btn-project">Projekt unterstützen</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.pexels.com/photos/247502/pexels-photo-247502.jpeg?w=600" alt="Tierrettung">
+                    </div>
+                    <div class="project-content">
+                        <h3>🚑 Wildtier-Notfall</h3>
+                        <p>Unser 24/7-Notfallteam rettet verletzte Wildtiere und pflegt sie gesund.</p>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
                             </div>
+                            <span>90% finanziert</span>
                         </div>
-                        <div class="analysis-item">
-                            <div class="analysis-number">3</div>
-                            <div class="analysis-content">
-                                <strong>Werbemittel</strong>
-                                <p>Welche sprachlichen Mittel werden verwendet?</p>
-                            </div>
-                        </div>
-                        <div class="analysis-item">
-                            <div class="analysis-number">4</div>
-                            <div class="analysis-content">
-                                <strong>Handlungsaufforderung</strong>
-                                <p>Wie wird zum Handeln motiviert?</p>
-                            </div>
-                        </div>
+                        <a href="#" class="btn-project">Projekt unterstützen</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Call to Action Section -->
-        <section class="cta-section">
-            <div class="cta-content">
-                <div class="cta-icon">🌲</div>
-                <h2>Werde Teil der Bewegung!</h2>
-                <p>Gemeinsam können wir die Natur und ihre Bewohner schützen. Jede Unterstützung zählt!</p>
-                <div class="cta-buttons">
-                    <a href="anmelden.html" class="btn-cta">Jetzt registrieren</a>
-                    <a href="#tiere" class="btn-cta-outline">Mehr erfahren</a>
+        <!-- Mitmachen Section -->
+        <section id="mitmachen" class="join-section">
+            <div class="join-content">
+                <div class="join-text">
+                    <span class="section-tag">🤝 Werden Sie aktiv</span>
+                    <h2>Gemeinsam mehr bewegen</h2>
+                    <p>Jeder Beitrag zählt! Ob als Mitglied, Förderer oder Freiwilliger – mit Ihrer Hilfe können wir noch mehr für Wildtiere erreichen.</p>
+                    <ul class="benefits-list">
+                        <li>✓ Regelmäßige Updates aus unseren Projekten</li>
+                        <li>✓ Exklusive Einblicke in die Wildtierarbeit</li>
+                        <li>✓ Teilnahme an Veranstaltungen und Exkursionen</li>
+                        <li>✓ Steuerlich absetzbare Spendenbescheinigung</li>
+                    </ul>
+                    <div class="join-buttons">
+                        <a href="anmelden.html" class="btn-primary">Jetzt Mitglied werden</a>
+                        <a href="#" class="btn-outline">Spenden</a>
+                    </div>
+                </div>
+                <div class="join-image">
+                    <img src="https://images.pexels.com/photos/356936/pexels-photo-356936.jpeg?w=600" alt="Freiwillige bei der Arbeit">
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Section -->
+        <section class="trust-section">
+            <div class="trust-content">
+                <h3>Vertrauen ist wichtig</h3>
+                <div class="trust-badges">
+                    <div class="trust-badge">
+                        <span class="badge-icon">🏆</span>
+                        <span>Gemeinnützig anerkannt</span>
+                    </div>
+                    <div class="trust-badge">
+                        <span class="badge-icon">✓</span>
+                        <span>Transparente Arbeit</span>
+                    </div>
+                    <div class="trust-badge">
+                        <span class="badge-icon">📊</span>
+                        <span>Jahresberichte</span>
+                    </div>
+                    <div class="trust-badge">
+                        <span class="badge-icon">🔒</span>
+                        <span>Sichere Spenden</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -272,19 +261,47 @@
 
     <footer>
         <div class="footer-content">
-            <div class="footer-animals">
-                <span>🦊</span><span>🦌</span><span>🦉</span><span>🐰</span><span>🦔</span><span>🦅</span>
+            <div class="footer-main">
+                <div class="footer-about">
+                    <div class="logo">
+                        <div class="logo-symbol">🌿</div>
+                        <div class="logo-text">
+                            <span class="logo-main">Natürlich für Tiere</span>
+                            <span class="logo-sub">e.V. Tierschutz</span>
+                        </div>
+                    </div>
+                    <p>Wir setzen uns seit 2019 für den Schutz einheimischer Wildtiere und ihrer natürlichen Lebensräume ein.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Startseite</a>
+                    <a href="#tiere">Tiere</a>
+                    <a href="#projekte">Projekte</a>
+                    <a href="#mitmachen">Mitmachen</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <p>📧 info@natuerlich-fuer-tiere.de</p>
+                    <p>📞 +49 (0) 123 456789</p>
+                    <p>📍 Musterstraße 1, 12345 Musterstadt</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Folgen Sie uns</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘 Facebook</a>
+                        <a href="#" class="social-link">📷 Instagram</a>
+                        <a href="#" class="social-link">🐦 Twitter</a>
+                    </div>
+                </div>
             </div>
-            <h3>Natürlich für Tiere</h3>
-            <p class="footer-slogan">Wald, Wiese, Wildtiere – Wir wollen sie bewahren</p>
-            <div class="footer-links">
-                <a href="index.html">Startseite</a>
-                <a href="#tiere">Tiere</a>
-                <a href="#werbeanzeige">Werbeanzeige</a>
-                <a href="anmelden.html">Anmelden</a>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Natürlich für Tiere e.V. – Alle Rechte vorbehalten.</p>
+                <div class="footer-legal">
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                    <a href="#">AGB</a>
+                </div>
             </div>
-            <p class="footer-note">&copy; 2026 – Eine Bildungswebsite für Deutschunterricht</p>
-            <p class="footer-note">Thema: Werbeanzeige-Analyse und Tierschutz</p>
         </div>
     </footer>
 </body>

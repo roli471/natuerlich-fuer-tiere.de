@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anmelden - Natürlich für Tiere</title>
+    <title>Mitglied werden - Natürlich für Tiere e.V.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="forest-bg">
-        <div class="tree tree-1">🌲</div>
-        <div class="tree tree-2">🌲</div>
-        <div class="tree tree-3">🌲</div>
-        <div class="bush bush-1">🌿</div>
-        <div class="bush bush-2">🌿</div>
+        <div class="forest-layer forest-back"></div>
+        <div class="forest-layer forest-mid"></div>
+        <div class="forest-layer forest-front"></div>
+        <div class="fireflies"></div>
     </div>
 
     <header>
         <nav class="navigation">
             <div class="logo">
-                <span class="logo-icon">🦊</span>
-                <h1>Natürlich für Tiere</h1>
+                <div class="logo-symbol">🌿</div>
+                <div class="logo-text">
+                    <span class="logo-main">Natürlich für Tiere</span>
+                    <span class="logo-sub">e.V. Tierschutz</span>
+                </div>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Startseite</a></li>
                 <li><a href="index.html#tiere">Tiere</a></li>
-                <li><a href="index.html#werbeanzeige">Werbeanzeige</a></li>
-                <li><a href="anmelden.html" class="btn-nav">Anmelden</a></li>
+                <li><a href="index.html#projekte">Projekte</a></li>
+                <li><a href="index.html#mitmachen">Mitmachen</a></li>
+                <li><a href="anmelden.html" class="btn-nav">Mitglied werden</a></li>
             </ul>
         </nav>
     </header>
@@ -40,26 +43,31 @@
                     <div class="register-animals">
                         <span>🦊</span><span>🦌</span><span>🦉</span><span>🐰</span>
                     </div>
-                    <h2>Werde Mitglied!</h2>
-                    <p class="register-slogan">Gemeinsam Wald, Wiese und Wildtiere bewahren</p>
+                    <h2>Mitglied werden</h2>
+                    <p class="register-slogan">Gemeinsam für Wildtiere und Naturschutz</p>
                 </div>
                 
                 <form class="register-form" action="#" method="post">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="vorname">Vorname *</label>
-                            <input type="text" id="vorname" name="vorname" required placeholder="Dein Vorname">
+                            <input type="text" id="vorname" name="vorname" required placeholder="Ihr Vorname">
                         </div>
 
                         <div class="form-group">
                             <label for="nachname">Nachname *</label>
-                            <input type="text" id="nachname" name="nachname" required placeholder="Dein Nachname">
+                            <input type="text" id="nachname" name="nachname" required placeholder="Ihr Nachname">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="email">E-Mail-Adresse *</label>
-                        <input type="email" id="email" name="email" required placeholder="deine.email@beispiel.de">
+                        <input type="email" id="email" name="email" required placeholder="ihre.email@beispiel.de">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefon">Telefon (optional)</label>
+                        <input type="tel" id="telefon" name="telefon" placeholder="+49 ...">
                     </div>
 
                     <div class="form-group">
@@ -69,12 +77,12 @@
 
                     <div class="form-group">
                         <label for="passwort-wiederholen">Passwort wiederholen *</label>
-                        <input type="password" id="passwort-wiederholen" name="passwort-wiederholen" required placeholder="Passwort erneut eingeben">
+                        <input type="password" id="passwort-wiederholen" name="passwort-wiederholen" required placeholder="Passwort bestätigen">
                     </div>
 
                     <div class="form-group checkbox-group">
-                        <input type="checkbox" id="newsletter" name="newsletter">
-                        <label for="newsletter">Ich möchte den Newsletter mit Tierschutz-News erhalten</label>
+                        <input type="checkbox" id="newsletter" name="newsletter" checked>
+                        <label for="newsletter">Ich möchte regelmäßig News über unsere Tierschutzarbeit erhalten</label>
                     </div>
 
                     <div class="form-group checkbox-group">
@@ -82,11 +90,12 @@
                         <label for="datenschutz">Ich habe die Datenschutzerklärung gelesen und stimme zu *</label>
                     </div>
 
-                    <button type="submit" class="btn-submit">🌿 Jetzt anmelden und Tiere schützen</button>
+                    <button type="submit" class="btn-submit">🌿 Jetzt Mitglied werden</button>
                 </form>
 
                 <div class="login-hint">
-                    <p>Bereits registriert? <a href="login.html">Hier einloggen</a></p>
+                    <p>Bereits Mitglied? <a href="login.html">Hier einloggen</a></p>
+                    <p class="member-benefit">✓ Über 2.500 Mitglieder vertrauen uns</p>
                 </div>
             </div>
         </section>
@@ -94,17 +103,43 @@
 
     <footer>
         <div class="footer-content">
-            <div class="footer-animals">
-                <span>🦊</span><span>🦌</span><span>🦉</span><span>🐰</span><span>🦔</span><span>🦅</span>
+            <div class="footer-main">
+                <div class="footer-about">
+                    <div class="logo">
+                        <div class="logo-symbol">🌿</div>
+                        <div class="logo-text">
+                            <span class="logo-main">Natürlich für Tiere</span>
+                            <span class="logo-sub">e.V. Tierschutz</span>
+                        </div>
+                    </div>
+                    <p>Wir setzen uns seit 2019 für den Schutz einheimischer Wildtiere und ihrer natürlichen Lebensräume ein.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Startseite</a>
+                    <a href="index.html#tiere">Tiere</a>
+                    <a href="index.html#projekte">Projekte</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <p>📧 info@natuerlich-fuer-tiere.de</p>
+                    <p>📞 +49 (0) 123 456789</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Folgen Sie uns</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘 Facebook</a>
+                        <a href="#" class="social-link">📷 Instagram</a>
+                    </div>
+                </div>
             </div>
-            <h3>Natürlich für Tiere</h3>
-            <p class="footer-slogan">Wald, Wiese, Wildtiere – Wir wollen sie bewahren</p>
-            <div class="footer-links">
-                <a href="index.html">Startseite</a>
-                <a href="index.html#tiere">Tiere</a>
-                <a href="anmelden.html">Anmelden</a>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Natürlich für Tiere e.V. – Alle Rechte vorbehalten.</p>
+                <div class="footer-legal">
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                </div>
             </div>
-            <p class="footer-note">&copy; 2026 – Eine Bildungswebsite für Deutschunterricht</p>
         </div>
     </footer>
 </body>
