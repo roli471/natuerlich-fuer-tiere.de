@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmelden - Natürlich für Tiere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="logo">
+                <span class="logo-icon">🌿</span>
+                <h1>Natürlich für Tiere</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="index.html#tiere">Tiere</a></li>
+                <li><a href="index.html#werbeanzeige">Werbeanzeige</a></li>
+                <li><a href="anmelden.html" class="btn-nav">Anmelden</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="register-section">
+            <div class="register-container">
+                <div class="register-header">
+                    <div class="register-animals">
+                        <span>🦊</span><span>🦌</span><span>🦉</span><span>🐰</span>
+                    </div>
+                    <h2>Werde Mitglied!</h2>
+                    <p class="register-slogan">Gemeinsam Wald, Wiese und Wildtiere bewahren</p>
+                </div>
+                
+                <form class="register-form" action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="vorname">Vorname *</label>
+                            <input type="text" id="vorname" name="vorname" required placeholder="Dein Vorname">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nachname">Nachname *</label>
+                            <input type="text" id="nachname" name="nachname" required placeholder="Dein Nachname">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-Mail-Adresse *</label>
+                        <input type="email" id="email" name="email" required placeholder="deine.email@beispiel.de">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="passwort">Passwort *</label>
+                        <input type="password" id="passwort" name="passwort" required placeholder="Mindestens 8 Zeichen">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="passwort-wiederholen">Passwort wiederholen *</label>
+                        <input type="password" id="passwort-wiederholen" name="passwort-wiederholen" required placeholder="Passwort erneut eingeben">
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Ich möchte den Newsletter mit Tierschutz-News erhalten</label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="datenschutz" name="datenschutz" required>
+                        <label for="datenschutz">Ich habe die Datenschutzerklärung gelesen und stimme zu *</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">🌿 Jetzt anmelden und Tiere schützen</button>
+                </form>
+
+                <div class="login-hint">
+                    <p>Bereits registriert? <a href="login.html">Hier einloggen</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-animals">
+                <span>🦊</span><span>🦌</span><span>🦉</span><span>🐰</span><span>🦔</span><span>🦅</span>
+            </div>
+            <p><strong>Natürlich für Tiere</strong></p>
+            <p>Wald, Wiese, Wildtiere – Wir wollen sie bewahren</p>
+            <p class="footer-note">&copy; 2026 – Eine Bildungswebsite für Deutschunterricht</p>
+        </div>
+    </footer>
+</body>
+</html>
