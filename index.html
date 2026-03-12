@@ -10,10 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Animated Background Particles -->
     <div class="particles" id="particles"></div>
     
-    <!-- Forest Background -->
     <div class="forest-bg">
         <div class="tree tree-1">🌲</div>
         <div class="tree tree-2">🌲</div>
@@ -23,17 +21,6 @@
         <div class="bush bush-1">🌿</div>
         <div class="bush bush-2">🌿</div>
         <div class="fireflies"></div>
-    </div>
-
-    <!-- Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loader">
-            <div class="loader-animal">🦊</div>
-            <div class="loader-bar">
-                <div class="loader-progress"></div>
-            </div>
-            <p>Lade Wald...</p>
-        </div>
     </div>
 
     <header>
@@ -48,12 +35,11 @@
             <ul class="nav-links">
                 <li><a href="index.html">Startseite</a></li>
                 <li><a href="#tiere">Tiere</a></li>
-                <li><a href="#projekte">Projekte</a></li>
                 <li><a href="#wissen">Wissen</a></li>
+                <li><a href="#projekte">Projekte</a></li>
                 <li><a href="#mitmachen">Mitmachen</a></li>
-                <li><a href="anmelden.html" class="btn-nav">Mitglied werden</a></li>
+                <li><a href="login.html" class="btn-nav">Login</a></li>
             </ul>
-            <button class="mobile-menu-btn">☰</button>
         </nav>
     </header>
 
@@ -65,14 +51,14 @@
                     <span class="badge-icon">⭐</span>
                     <span>Seit 2019 im Einsatz für Wildtiere</span>
                 </div>
-                <h1 class="hero-title glitch" data-text="Wald, Wiese, Wildtiere">Wald, Wiese, Wildtiere</h1>
+                <h1 class="hero-title">Wald, Wiese, Wildtiere</h1>
                 <div class="title-divider"></div>
-                <p class="hero-subtitle animate-fadeIn">Wir wollen sie bewahren</p>
-                <p class="hero-text">Wir setzen uns leidenschaftlich für den Schutz einheimischer Wildtiere und ihrer natürlichen Lebensräume ein. Gemeinsam schaffen wir eine Zukunft, in der Mensch und Tier im Einklang leben.</p>
+                <p class="hero-subtitle">Wir wollen sie bewahren</p>
+                <p class="hero-text">Wir setzen uns leidenschaftlich für den Schutz einheimischer Wildtiere und ihrer natürlichen Lebensräume ein.</p>
                 
                 <div class="hero-cta">
-                    <a href="anmelden.html" class="btn-primary btn-glow">🌟 Jetzt Mitglied werden</a>
-                    <a href="#tiere" class="btn-secondary">Unsere Schützlinge</a>
+                    <a href="anmelden.html" class="btn-primary">🌟 Mitglied werden</a>
+                    <a href="#tiere" class="btn-secondary">Tiere entdecken</a>
                 </div>
                 
                 <div class="hero-animals-showcase">
@@ -82,89 +68,62 @@
                     <span class="showcase-animal float delay-3">🐰</span>
                     <span class="showcase-animal float delay-4">🦔</span>
                     <span class="showcase-animal float delay-5">🐗</span>
-                    <span class="showcase-animal float delay-6">🦋</span>
-                    <span class="showcase-animal float delay-7">🐿️</span>
                 </div>
                 
                 <div class="hero-stats">
-                    <div class="stat-item animate-scale">
-                        <span class="stat-value counter" data-target="2500">0</span>
+                    <div class="stat-item">
+                        <span class="stat-value">2.500+</span>
                         <span class="stat-label">Mitglieder</span>
                     </div>
-                    <div class="stat-item animate-scale delay-1">
-                        <span class="stat-value counter" data-target="850">0</span>
+                    <div class="stat-item">
+                        <span class="stat-value">850+</span>
                         <span class="stat-label">Gerettete Tiere</span>
                     </div>
-                    <div class="stat-item animate-scale delay-2">
-                        <span class="stat-value counter" data-target="12">0</span>
+                    <div class="stat-item">
+                        <span class="stat-value">12</span>
                         <span class="stat-label">Schutzgebiete</span>
                     </div>
                 </div>
-            </div>
-            
-            <div class="hero-scroll-indicator">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-                <p>Nach unten scrollen</p>
             </div>
         </section>
 
         <!-- Tiere Section -->
         <section id="tiere" class="animals-section">
             <div class="section-header">
-                <span class="section-tag animate-bounce">🐾 Unsere Schützlinge</span>
-                <h2 class="animate-title">Die Bewohner unserer Wälder</h2>
-                <p class="animate-fadeIn">Lernen Sie die faszinierenden Wildtiere kennen, für die wir uns täglich einsetzen.</p>
+                <span class="section-tag">🐾 Unsere Schützlinge</span>
+                <h2>Die Bewohner unserer Wälder</h2>
+                <p>Lernen Sie die faszinierenden Wildtiere kennen!</p>
             </div>
             
             <div class="animal-grid">
-                <!-- Fuchs Card -->
-                <div class="animal-card large animate-on-scroll">
+                <div class="animal-card large">
                     <div class="animal-emoji-wrapper">
                         <span class="animal-emoji">🦊</span>
                         <div class="animal-status">✓ Geschützt</div>
-                        <div class="animal-glow"></div>
                     </div>
                     <div class="animal-info">
                         <h3>Rotfuchs</h3>
                         <span class="latin-name">Vulpes vulpes</span>
-                        <p class="animal-short">Der schlaue Jäger der Nacht</p>
+                        <p>Der schlaue Jäger der Nacht. Füchse können Mäuse unter Schnee hören!</p>
                         <div class="animal-details">
-                            <span>📍 Ganz Deutschland</span>
+                            <span>📍 Deutschland</span>
                             <span>⚖️ 5-8 kg</span>
                             <span>🍖 Allesfresser</span>
-                        </div>
-                        <div class="animal-facts-preview">
-                            <div class="fact-item">
-                                <span class="fact-icon">🎯</span>
-                                <span>Kann Mäuse unter Schnee hören</span>
-                            </div>
-                            <div class="fact-item">
-                                <span class="fact-icon">🏃</span>
-                                <span>Bis zu 50 km/h schnell</span>
-                            </div>
-                            <div class="fact-item">
-                                <span class="fact-icon">🌙</span>
-                                <span>Nachtaktiv</span>
-                            </div>
                         </div>
                         <a href="fuchs.html" class="btn-small">Mehr erfahren →</a>
                     </div>
                 </div>
 
-                <!-- Reh Card -->
-                <div class="animal-card animate-on-scroll">
+                <div class="animal-card">
                     <div class="animal-emoji-wrapper">
                         <span class="animal-emoji">🦌</span>
-                        <div class="animal-glow"></div>
                     </div>
                     <div class="animal-info">
                         <h3>Rehwild</h3>
                         <span class="latin-name">Capreolus capreolus</span>
-                        <p class="animal-short">Der sanfte Waldbewohner</p>
+                        <p>Sanfte Waldbewohner mit hervorragendem Rundumblick.</p>
                         <div class="animal-details">
-                            <span>📍 Wälder & Felder</span>
+                            <span>📍 Wälder</span>
                             <span>⚖️ 20-25 kg</span>
                             <span>🌿 Pflanzenfresser</span>
                         </div>
@@ -172,37 +131,33 @@
                     </div>
                 </div>
 
-                <!-- Eule Card -->
-                <div class="animal-card animate-on-scroll">
+                <div class="animal-card">
                     <div class="animal-emoji-wrapper">
                         <span class="animal-emoji">🦉</span>
-                        <div class="animal-glow"></div>
                     </div>
                     <div class="animal-info">
                         <h3>Waldkauz</h3>
                         <span class="latin-name">Strix aluco</span>
-                        <p class="animal-short">Der lautlose Jäger</p>
+                        <p>Lautloser Jäger der Nacht mit 270° Kopfrotation.</p>
                         <div class="animal-details">
-                            <span>📍 Ganz Europa</span>
-                            <span>⚖️ 400-600 g</span>
+                            <span>📍 Europa</span>
+                            <span>⚖️ 400-600g</span>
                             <span>🦅 Greifvogel</span>
                         </div>
                         <a href="#" class="btn-small">Mehr erfahren →</a>
                     </div>
                 </div>
 
-                <!-- Hase Card -->
-                <div class="animal-card animate-on-scroll">
+                <div class="animal-card">
                     <div class="animal-emoji-wrapper">
                         <span class="animal-emoji">🐰</span>
-                        <div class="animal-glow"></div>
                     </div>
                     <div class="animal-info">
                         <h3>Feldhase</h3>
                         <span class="latin-name">Lepus europaeus</span>
-                        <p class="animal-short">Der schnelle Läufer</p>
+                        <p>Schneller Läufer der Felder, bis zu 60 km/h!</p>
                         <div class="animal-details">
-                            <span>📍 Offene Felder</span>
+                            <span>📍 Felder</span>
                             <span>⚖️ 3-5 kg</span>
                             <span>🥕 Pflanzenfresser</span>
                         </div>
@@ -210,37 +165,33 @@
                     </div>
                 </div>
 
-                <!-- Igel Card -->
-                <div class="animal-card animate-on-scroll">
+                <div class="animal-card">
                     <div class="animal-emoji-wrapper">
                         <span class="animal-emoji">🦔</span>
-                        <div class="animal-glow"></div>
                     </div>
                     <div class="animal-info">
                         <h3>Braunbrustigel</h3>
                         <span class="latin-name">Erinaceus europaeus</span>
-                        <p class="animal-short">Der stachelige Freund</p>
+                        <p>Stacheliger Freund mit bis zu 8.000 Stacheln!</p>
                         <div class="animal-details">
-                            <span>📍 Gärten & Hecken</span>
-                            <span>⚖️ 800-1200 g</span>
+                            <span>📍 Gärten</span>
+                            <span>⚖️ 800-1200g</span>
                             <span>🐛 Insektenfresser</span>
                         </div>
                         <a href="igel.html" class="btn-small">Mehr erfahren →</a>
                     </div>
                 </div>
 
-                <!-- Wildschwein Card -->
-                <div class="animal-card animate-on-scroll">
+                <div class="animal-card">
                     <div class="animal-emoji-wrapper">
                         <span class="animal-emoji">🐗</span>
-                        <div class="animal-glow"></div>
                     </div>
                     <div class="animal-info">
                         <h3>Wildschwein</h3>
                         <span class="latin-name">Sus scrofa</span>
-                        <p class="animal-short">Der starke Waldbewohner</p>
+                        <p>Starker Waldbewohner, durchwühlt den Boden.</p>
                         <div class="animal-details">
-                            <span>📍 Dichte Wälder</span>
+                            <span>📍 Wälder</span>
                             <span>⚖️ 50-200 kg</span>
                             <span>🍖 Allesfresser</span>
                         </div>
@@ -250,109 +201,65 @@
             </div>
         </section>
 
-        <!-- Wissen Section - NEW with LOTS of info -->
+        <!-- Wissen Section -->
         <section id="wissen" class="knowledge-section">
             <div class="section-header">
                 <span class="section-tag">📚 Wildtier-Wissen</span>
-                <h2>Erstaunliche Fakten über unsere Tiere</h2>
-                <p>Wussten Sie schon? Diese und mehr faszinierende Fakten über die Bewohner unserer Wälder!</p>
+                <h2>Erstaunliche Fakten</h2>
+                <p>Wussten Sie schon? Faszinierende Fakten über unsere Tiere!</p>
             </div>
 
             <div class="knowledge-grid">
-                <!-- Fuchs Facts -->
-                <div class="knowledge-card animate-on-scroll">
+                <div class="knowledge-card">
                     <div class="knowledge-header">
                         <span class="knowledge-emoji">🦊</span>
                         <h3>Fuchs-Fakten</h3>
                     </div>
                     <ul class="knowledge-list">
-                        <li>🎯 <strong>Super-Gehör:</strong> Füchse können Mäusepiepsen unter 30 cm Schnee hören!</li>
-                        <li>🏃 <strong>Spitzengeschwindigkeit:</strong> Bis zu 50 km/h im Sprint</li>
-                        <li>🌙 <strong>Nachtaktiv:</strong> 90% der Nacht sind sie unterwegs</li>
-                        <li>👨‍👩‍👧‍👦 <strong>Familientiere:</strong> Leben in Rudeln mit strenger Hierarchie</li>
-                        <li>🍇 <strong>Vielfraße:</strong> Fressen über 300 verschiedene Nahrungsmittel</li>
-                        <li>🏠 <strong>Baumeister:</strong> Baue werden über Generationen genutzt</li>
-                        <li>💤 <strong>Schläfer:</strong> Bis zu 18 Stunden Schlaf pro Tag</li>
-                        <li>🎭 <strong>Schauspieler:</strong> Stellen sich bei Gefahr tot</li>
+                        <li>🎯 <strong>Super-Gehör:</strong> Hören Mäuse unter 30cm Schnee</li>
+                        <li>🏃 <strong>Speed:</strong> Bis zu 50 km/h schnell</li>
+                        <li>🌙 <strong>Nachtaktiv:</strong> 90% der Nacht unterwegs</li>
+                        <li>🍇 <strong>Vielfraße:</strong> 300+ Nahrungsmittel</li>
                     </ul>
                 </div>
 
-                <!-- Reh Facts -->
-                <div class="knowledge-card animate-on-scroll">
+                <div class="knowledge-card">
                     <div class="knowledge-header">
                         <span class="knowledge-emoji">🦌</span>
                         <h3>Reh-Fakten</h3>
                     </div>
                     <ul class="knowledge-list">
-                        <li>👀 <strong>Rundumblick:</strong> Können ohne Kopf zu drehen fast 360° sehen</li>
-                        <li>🦷 <strong>Zähne:</strong> Haben nur im Unterkiefer Zähne</li>
+                        <li>👀 <strong>Rundumblick:</strong> Fast 360° ohne Kopf drehen</li>
+                        <li>🦷 <strong>Zähne:</strong> Nur im Unterkiefer</li>
                         <li>🏊 <strong>Schwimmer:</strong> Können hervorragend schwimmen</li>
-                        <li>👂 <strong>Ohren:</strong> Können ihre Ohren unabhängig drehen</li>
-                        <li>🌿 <strong>Wiederkäuer:</strong> Verdauen Nahrung in zwei Schritten</li>
-                        <li>🦴 <strong>Geweih:</strong> Nur Böcke tragen ein Geweih</li>
-                        <li>⚡ <strong>Sprinter:</strong> Bis zu 60 km/h über kurze Distanzen</li>
-                        <li>👃 <strong>Nase:</strong> Riechen Feinde aus 500m Entfernung</li>
+                        <li>👃 <strong>Nase:</strong> Riechen Feinde aus 500m</li>
                     </ul>
                 </div>
 
-                <!-- Eule Facts -->
-                <div class="knowledge-card animate-on-scroll">
+                <div class="knowledge-card">
                     <div class="knowledge-header">
                         <span class="knowledge-emoji">🦉</span>
                         <h3>Eulen-Fakten</h3>
                     </div>
                     <ul class="knowledge-list">
-                        <li>🔄 <strong>Kopfrotation:</strong> Können ihren Kopf 270° drehen</li>
-                        <li>🌙 <strong>Nachtsicht:</strong> Sehen bei Nacht 10x besser als Menschen</li>
-                        <li>🤫 <strong>Leise:</strong> Flügelgeräusche sind unhörbar</li>
-                        <li>🎯 <strong>Präzision:</strong> Treffen Beute im kompletten Dunkeln</li>
-                        <li>👂 <strong>Asymmetrische Ohren:</strong> Ein Ohr höher als das andere</li>
-                        <li>🦴 <strong>Verdauung:</strong> Speien unverdaute Reste als Gewölle aus</li>
-                        <li>💑 <strong>Treu:</strong> Bleiben oft ein Leben lang zusammen</li>
-                        <li>🥚 <strong>Brut:</strong> Brüten bereits ab dem ersten Ei</li>
+                        <li>🔄 <strong>Kopf:</strong> 270° drehbar</li>
+                        <li>🌙 <strong>Nachtsicht:</strong> 10x besser als Menschen</li>
+                        <li>🤫 <strong>Leise:</strong> Unhörbarer Flug</li>
+                        <li>👂 <strong>Ohren:</strong> Asymmetrisch angeordnet</li>
                     </ul>
                 </div>
 
-                <!-- Igel Facts -->
-                <div class="knowledge-card animate-on-scroll">
+                <div class="knowledge-card">
                     <div class="knowledge-header">
                         <span class="knowledge-emoji">🦔</span>
                         <h3>Igel-Fakten</h3>
                     </div>
                     <ul class="knowledge-list">
-                        <li>📍 <strong>Stacheln:</strong> Bis zu 8.000 Stacheln pro Tier</li>
-                        <li>😴 <strong>Winterschlaf:</strong> Bis zu 6 Monate ohne zu fressen</li>
-                        <li>❤️ <strong>Herzschlag:</strong> Im Winterschlaf nur 5 Schläge/Minute</li>
-                        <li>👃 <strong>Nase:</strong> 200x besserer Geruchssinn als Menschen</li>
-                        <li>🏃 <strong>Läufer:</strong> Bis zu 3 km pro Nacht</li>
-                        <li>🦟 <strong>Schutz:</strong> Immun gegen Schlangengift</li>
-                        <li>👶 <strong>Babys:</strong> Werden blind und taub geboren</li>
-                        <li>🌡️ <strong>Temperatur:</strong> Körpertemperatur sinkt im Schlaf auf 5°C</li>
+                        <li>📍 <strong>Stacheln:</strong> Bis zu 8.000 pro Tier</li>
+                        <li>😴 <strong>Winterschlaf:</strong> 6 Monate ohne Fressen</li>
+                        <li>❤️ <strong>Herz:</strong> Nur 5 Schläge/Minute im Schlaf</li>
+                        <li>🦟 <strong>Immun:</strong> Gegen Schlangengift</li>
                     </ul>
-                </div>
-            </div>
-
-            <!-- Additional Info Boxes -->
-            <div class="info-boxes">
-                <div class="info-box animate-on-scroll">
-                    <div class="info-box-icon">🚨</div>
-                    <h3>Bedrohte Arten</h3>
-                    <p>Über 30% der einheimischen Wildtierarten sind in ihrem Bestand gefährdet. Der Feldhase steht auf der Roten Liste als gefährdet.</p>
-                </div>
-                <div class="info-box animate-on-scroll">
-                    <div class="info-box-icon">🏥</div>
-                    <h3>Wildtierstationen</h3>
-                    <p>Deutschlandweit gibt es über 500 Wildtierstationen, die jährlich mehr als 100.000 verletzte Tiere aufnehmen.</p>
-                </div>
-                <div class="info-box animate-on-scroll">
-                    <div class="info-box-icon">🚗</div>
-                    <h3>Wildunfälle</h3>
-                    <p>Jährlich kommen über 200.000 Rehe im Straßenverkehr ums Leben. Besonders gefährlich sind Dämmerungsstunden.</p>
-                </div>
-                <div class="info-box animate-on-scroll">
-                    <div class="info-box-icon">🌳</div>
-                    <h3>Lebensraum</h3>
-                    <p>Deutschland verliert täglich 56 Hektar natürliche Fläche durch Bebauung - das sind 80 Fußballfelder pro Tag!</p>
                 </div>
             </div>
         </section>
@@ -362,52 +269,52 @@
             <div class="section-header">
                 <span class="section-tag">🌲 Unsere Arbeit</span>
                 <h2>Aktuelle Projekte</h2>
-                <p>Entdecken Sie, wie wir konkret Wildtiere und ihre Lebensräume schützen.</p>
+                <p>So schützen wir Wildtiere konkret!</p>
             </div>
             
             <div class="projects-grid">
-                <div class="project-card animate-on-scroll">
+                <div class="project-card">
                     <div class="project-emoji">🌳</div>
                     <div class="project-content">
                         <h3>Lebensraum Wald</h3>
-                        <p>Wir kaufen und schützen Waldflächen, um sie als Rückzugsorte für Wildtiere zu erhalten.</p>
+                        <p>Wir kaufen und schützen Waldflächen für Wildtiere.</p>
                         <div class="project-progress">
                             <div class="progress-bar">
                                 <div class="progress-fill" style="width: 75%"></div>
                             </div>
                             <span>75% finanziert</span>
                         </div>
-                        <a href="#" class="btn-project">Projekt unterstützen</a>
+                        <a href="#" class="btn-project">Unterstützen</a>
                     </div>
                 </div>
 
-                <div class="project-card animate-on-scroll">
+                <div class="project-card">
                     <div class="project-emoji">🌻</div>
                     <div class="project-content">
                         <h3>Blühende Wiesen</h3>
-                        <p>Wir verwandeln monotone Flächen in artenreiche Wiesen für Insekten und Wildtiere.</p>
+                        <p>Artenreiche Wiesen für Insekten und Wildtiere.</p>
                         <div class="project-progress">
                             <div class="progress-bar">
                                 <div class="progress-fill" style="width: 60%"></div>
                             </div>
                             <span>60% finanziert</span>
                         </div>
-                        <a href="#" class="btn-project">Projekt unterstützen</a>
+                        <a href="#" class="btn-project">Unterstützen</a>
                     </div>
                 </div>
 
-                <div class="project-card animate-on-scroll">
+                <div class="project-card">
                     <div class="project-emoji">🚑</div>
                     <div class="project-content">
                         <h3>Wildtier-Notfall</h3>
-                        <p>Unser 24/7-Notfallteam rettet verletzte Wildtiere und pflegt sie gesund.</p>
+                        <p>24/7-Team rettet verletzte Wildtiere.</p>
                         <div class="project-progress">
                             <div class="progress-bar">
                                 <div class="progress-fill" style="width: 90%"></div>
                             </div>
                             <span>90% finanziert</span>
                         </div>
-                        <a href="#" class="btn-project">Projekt unterstützen</a>
+                        <a href="#" class="btn-project">Unterstützen</a>
                     </div>
                 </div>
             </div>
@@ -419,15 +326,15 @@
                 <div class="join-text">
                     <span class="section-tag">🤝 Werden Sie aktiv</span>
                     <h2>Gemeinsam mehr bewegen</h2>
-                    <p>Jeder Beitrag zählt! Ob als Mitglied, Förderer oder Freiwilliger – mit Ihrer Hilfe können wir noch mehr für Wildtiere erreichen.</p>
+                    <p>Jeder Beitrag zählt für den Tierschutz!</p>
                     <ul class="benefits-list">
-                        <li>✓ Regelmäßige Updates aus unseren Projekten</li>
-                        <li>✓ Exklusive Einblicke in die Wildtierarbeit</li>
-                        <li>✓ Teilnahme an Veranstaltungen und Exkursionen</li>
-                        <li>✓ Steuerlich absetzbare Spendenbescheinigung</li>
+                        <li>✓ Regelmäßige Updates</li>
+                        <li>✓ Exklusive Einblicke</li>
+                        <li>✓ Veranstaltungen</li>
+                        <li>✓ Steuerlich absetzbar</li>
                     </ul>
                     <div class="join-buttons">
-                        <a href="anmelden.html" class="btn-primary btn-glow">Jetzt Mitglied werden</a>
+                        <a href="anmelden.html" class="btn-primary">Mitglied werden</a>
                         <a href="#" class="btn-outline">Spenden</a>
                     </div>
                 </div>
@@ -437,32 +344,6 @@
                     <span class="join-emoji float delay-2">🦉</span>
                     <span class="join-emoji float delay-3">🐰</span>
                     <span class="join-emoji float delay-4">🦔</span>
-                    <span class="join-emoji float delay-5">🌲</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Trust Section -->
-        <section class="trust-section">
-            <div class="trust-content">
-                <h3>Vertrauen ist wichtig</h3>
-                <div class="trust-badges">
-                    <div class="trust-badge animate-scale">
-                        <span class="badge-icon">🏆</span>
-                        <span>Gemeinnützig anerkannt</span>
-                    </div>
-                    <div class="trust-badge animate-scale delay-1">
-                        <span class="badge-icon">✓</span>
-                        <span>Transparente Arbeit</span>
-                    </div>
-                    <div class="trust-badge animate-scale delay-2">
-                        <span class="badge-icon">📊</span>
-                        <span>Jahresberichte</span>
-                    </div>
-                    <div class="trust-badge animate-scale delay-3">
-                        <span class="badge-icon">🔒</span>
-                        <span>Sichere Spenden</span>
-                    </div>
                 </div>
             </div>
         </section>
@@ -476,106 +357,55 @@
                         <div class="logo-symbol">🌿</div>
                         <div class="logo-text">
                             <span class="logo-main">Natürlich für Tiere</span>
-                            <span class="logo-sub">e.V. Tierschutz</span>
+                            <span class="logo-sub">e.V.</span>
                         </div>
                     </div>
-                    <p>Wir setzen uns seit 2019 für den Schutz einheimischer Wildtiere und ihrer natürlichen Lebensräume ein.</p>
+                    <p>Tierschutz seit 2019.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Navigation</h4>
                     <a href="index.html">Startseite</a>
                     <a href="#tiere">Tiere</a>
                     <a href="#projekte">Projekte</a>
-                    <a href="#mitmachen">Mitmachen</a>
                 </div>
                 <div class="footer-contact">
                     <h4>Kontakt</h4>
                     <p>📧 info@natuerlich-fuer-tiere.de</p>
-                    <p>📞 +49 (0) 123 456789</p>
-                    <p>📍 Musterstraße 1, 12345 Musterstadt</p>
-                </div>
-                <div class="footer-social">
-                    <h4>Folgen Sie uns</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link">📘 Facebook</a>
-                        <a href="#" class="social-link">📷 Instagram</a>
-                        <a href="#" class="social-link">🐦 Twitter</a>
-                    </div>
+                    <p>📞 +49 123 456789</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Natürlich für Tiere e.V. – Alle Rechte vorbehalten.</p>
+                <p>&copy; 2026 Natürlich für Tiere e.V.</p>
                 <div class="footer-legal">
                     <a href="#">Impressum</a>
                     <a href="#">Datenschutz</a>
-                    <a href="#">AGB</a>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
-        // Loading Screen
-        window.addEventListener('load', () => {
-            const loadingScreen = document.getElementById('loadingScreen');
-            const progress = document.querySelector('.loader-progress');
-            let width = 0;
-            const interval = setInterval(() => {
-                if (width >= 100) {
-                    clearInterval(interval);
-                    loadingScreen.style.opacity = '0';
-                    setTimeout(() => loadingScreen.style.display = 'none', 500);
-                } else {
-                    width += 5;
-                    progress.style.width = width + '%';
-                }
-            }, 50);
-        });
-
-        // Counter Animation
-        const counters = document.querySelectorAll('.counter');
-        counters.forEach(counter => {
-            const target = +counter.getAttribute('data-target');
-            const increment = target / 50;
-            const updateCounter = () => {
-                const count = +counter.innerText.replace('+', '');
-                if (count < target) {
-                    counter.innerText = Math.ceil(count + increment) + (target > 100 ? '+' : '');
-                    setTimeout(updateCounter, 30);
-                } else {
-                    counter.innerText = target + (target > 100 ? '+' : '');
-                }
-            };
-            updateCounter();
-        });
+        // Particles
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 50; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 5 + 's';
+            particle.style.animationDuration = (Math.random() * 10 + 5) + 's';
+            particlesContainer.appendChild(particle);
+        }
 
         // Scroll Animation
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
                 }
             });
-        }, observerOptions);
+        }, { threshold: 0.1 });
 
         document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
-
-        // Particle System
-        const particlesContainer = document.getElementById('particles');
-        for (let i = 0; i < 50; i++) {
-            const particle = document.createElement('div');
-            particle.className = 'particle';
-            particle.style.left = Math.random() * 100 + '%';
-            particle.style.top = Math.random() * 100 + '%';
-            particle.style.animationDelay = Math.random() * 5 + 's';
-            particle.style.animationDuration = (Math.random() * 10 + 5) + 's';
-            particlesContainer.appendChild(particle);
-        }
     </script>
 </body>
 </html>
