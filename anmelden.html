@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrieren - Natürlich für Tiere</title>
+    <title>Mitglied werden - Natürlich für Tiere e.V.</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -18,8 +18,11 @@
     <header>
         <nav class="navigation">
             <div class="logo">
-                <span class="logo-symbol">🌿</span>
-                <span class="logo-main">Natürlich für Tiere</span>
+                <div class="logo-symbol">🌿</div>
+                <div class="logo-text">
+                    <span class="logo-main">Natürlich für Tiere</span>
+                    <span class="logo-sub">e.V.</span>
+                </div>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Startseite</a></li>
@@ -33,13 +36,16 @@
             <div class="auth-container">
                 <div class="auth-header">
                     <div class="auth-animals">
-                        <span>🦊</span><span>🦌</span><span>🦉</span><span>🐰</span>
+                        <span class="auth-animal">🦊</span>
+                        <span class="auth-animal">🦌</span>
+                        <span class="auth-animal">🦉</span>
+                        <span class="auth-animal">🐰</span>
                     </div>
                     <h2>Mitglied werden! 🌟</h2>
-                    <p>Werden Sie Teil unserer Tierschutz-Familie</p>
+                    <p class="auth-slogan">Werden Sie Teil unserer Tierschutz-Familie</p>
                     <div class="member-benefits">
-                        <span class="benefit-badge">✓ Updates</span>
-                        <span class="benefit-badge">✓ Events</span>
+                        <span class="benefit-badge">✓ Exklusive Updates</span>
+                        <span class="benefit-badge">✓ Veranstaltungen</span>
                         <span class="benefit-badge">✓ Steuerabsetzbar</span>
                     </div>
                 </div>
@@ -47,35 +53,71 @@
                 <form class="auth-form">
                     <div class="form-row">
                         <div class="form-group">
-                            <label>Vorname *</label>
-                            <input type="text" required placeholder="Vorname">
+                            <label for="firstname">
+                                <span class="label-icon">👤</span>
+                                Vorname *
+                            </label>
+                            <input type="text" id="firstname" placeholder="Ihr Vorname" required>
                         </div>
                         <div class="form-group">
-                            <label>Nachname *</label>
-                            <input type="text" required placeholder="Nachname">
+                            <label for="lastname">
+                                <span class="label-icon">👤</span>
+                                Nachname *
+                            </label>
+                            <input type="text" id="lastname" placeholder="Ihr Nachname" required>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label>📧 E-Mail *</label>
-                        <input type="email" required placeholder="ihre@email.de">
+                        <label for="email">
+                            <span class="label-icon">📧</span>
+                            E-Mail-Adresse *
+                        </label>
+                        <input type="email" id="email" placeholder="ihre.email@beispiel.de" required>
                     </div>
 
                     <div class="form-group">
-                        <label>🔒 Passwort *</label>
-                        <input type="password" required placeholder="Mindestens 8 Zeichen">
+                        <label for="phone">
+                            <span class="label-icon">📞</span>
+                            Telefon (optional)
+                        </label>
+                        <input type="tel" id="phone" placeholder="+49 ...">
                     </div>
 
                     <div class="form-group">
-                        <label>🔒 Passwort wiederholen *</label>
-                        <input type="password" required placeholder="Passwort bestätigen">
+                        <label for="password">
+                            <span class="label-icon">🔒</span>
+                            Passwort *
+                        </label>
+                        <input type="password" id="password" placeholder="Mindestens 8 Zeichen" required>
+                        <div class="password-strength">
+                            <div class="strength-bar"></div>
+                        </div>
                     </div>
 
-                    <label class="checkbox-label">
-                        <input type="checkbox" required> Ich stimme den AGB zu *
-                    </label>
+                    <div class="form-group">
+                        <label for="password-confirm">
+                            <span class="label-icon">🔒</span>
+                            Passwort wiederholen *
+                        </label>
+                        <input type="password" id="password-confirm" placeholder="Passwort bestätigen" required>
+                    </div>
 
-                    <button type="submit" class="btn-submit">🌿 Jetzt registrieren</button>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" checked>
+                        <label for="newsletter">📬 Ich möchte Newsletter mit Tierschutz-News erhalten</label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">📋 Ich habe die Datenschutzerklärung gelesen und stimme zu *</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <span class="btn-icon">🌿</span>
+                        Jetzt Mitglied werden
+                        <span class="btn-confetti">🎉</span>
+                    </button>
                 </form>
 
                 <div class="auth-footer">
@@ -83,20 +125,57 @@
                         <span class="member-number">2.500+</span>
                         <span class="member-text">bereits Mitglieder</span>
                     </div>
-                    <p>Bereits Mitglied? <a href="login.html">Einloggen</a></p>
+                    <p class="auth-text">Bereits Mitglied? <a href="login.html">Hier einloggen</a></p>
                 </div>
             </div>
         </section>
     </main>
 
+    <footer>
+        <div class="footer-content">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Natürlich für Tiere e.V.</p>
+                <div class="footer-legal">
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script>
+        // Particle System
         const particlesContainer = document.getElementById('particles');
         for (let i = 0; i < 30; i++) {
             const particle = document.createElement('div');
             particle.className = 'particle';
             particle.style.left = Math.random() * 100 + '%';
             particle.style.animationDelay = Math.random() * 5 + 's';
+            particle.style.animationDuration = (Math.random() * 10 + 5) + 's';
             particlesContainer.appendChild(particle);
+        }
+
+        // Password Strength Indicator
+        const passwordInput = document.getElementById('password');
+        const strengthBar = document.querySelector('.strength-bar');
+        
+        if (passwordInput && strengthBar) {
+            passwordInput.addEventListener('input', function() {
+                const value = this.value;
+                let strength = 0;
+                
+                if (value.length >= 8) strength++;
+                if (value.match(/[a-z]/)) strength++;
+                if (value.match(/[A-Z]/)) strength++;
+                if (value.match(/[0-9]/)) strength++;
+                if (value.match(/[^a-zA-Z0-9]/)) strength++;
+                
+                const colors = ['#ff4444', '#ff8800', '#ffcc00', '#88cc00', '#44cc44'];
+                const widths = ['20%', '40%', '60%', '80%', '100%'];
+                
+                strengthBar.style.width = widths[strength - 1] || '0%';
+                strengthBar.style.background = colors[strength - 1] || '#ff4444';
+            });
         }
     </script>
 </body>
