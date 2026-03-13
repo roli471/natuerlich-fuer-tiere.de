@@ -411,68 +411,74 @@
     </footer>
 
     <script>
-        const cursor = document.getElementById('cursor');
-        const cursorFollower = document.getElementById('cursorFollower');
-        const cursorDot = document.getElementById('cursorDot');
+        // Only init cursor on desktop
+        const isMobile = window.innerWidth <= 768;
         
-        let mouseX = 0, mouseY = 0;
-        let cursorX = 0, cursorY = 0;
-        let followerX = 0, followerY = 0;
-        
-        document.addEventListener('mousemove', (e) => {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
+        if (!isMobile) {
+            const cursor = document.getElementById('cursor');
+            const cursorFollower = document.getElementById('cursorFollower');
+            const cursorDot = document.getElementById('cursorDot');
             
-            if (Math.random() > 0.7) {
-                const trail = document.createElement('div');
-                trail.className = 'cursor-trail';
-                trail.style.left = e.clientX + 'px';
-                trail.style.top = e.clientY + 'px';
-                document.body.appendChild(trail);
-                setTimeout(() => trail.remove(), 500);
+            let mouseX = 0, mouseY = 0;
+            let cursorX = 0, cursorY = 0;
+            let followerX = 0, followerY = 0;
+            
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                
+                if (Math.random() > 0.7) {
+                    const trail = document.createElement('div');
+                    trail.className = 'cursor-trail';
+                    trail.style.left = e.clientX + 'px';
+                    trail.style.top = e.clientY + 'px';
+                    document.body.appendChild(trail);
+                    setTimeout(() => trail.remove(), 500);
+                }
+            });
+            
+            function animateCursor() {
+                cursorX += (mouseX - cursorX) * 0.5;
+                cursorY += (mouseY - cursorY) * 0.5;
+                followerX += (mouseX - followerX) * 0.1;
+                followerY += (mouseY - followerY) * 0.1;
+                
+                cursor.style.left = cursorX + 'px';
+                cursor.style.top = cursorY + 'px';
+                cursorDot.style.left = mouseX + 'px';
+                cursorDot.style.top = mouseY + 'px';
+                cursorFollower.style.left = followerX + 'px';
+                cursorFollower.style.top = followerY + 'px';
+                
+                requestAnimationFrame(animateCursor);
             }
-        });
-        
-        function animateCursor() {
-            cursorX += (mouseX - cursorX) * 0.5;
-            cursorY += (mouseY - cursorY) * 0.5;
-            followerX += (mouseX - followerX) * 0.1;
-            followerY += (mouseY - followerY) * 0.1;
+            animateCursor();
             
-            cursor.style.left = cursorX + 'px';
-            cursor.style.top = cursorY + 'px';
-            cursorDot.style.left = mouseX + 'px';
-            cursorDot.style.top = mouseY + 'px';
-            cursorFollower.style.left = followerX + 'px';
-            cursorFollower.style.top = followerY + 'px';
+            const hoverElements = document.querySelectorAll('a, button, .btn-small, .animal-card, .project-card');
+            hoverElements.forEach(el => {
+                el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+                el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+            });
             
-            requestAnimationFrame(animateCursor);
+            document.addEventListener('mousedown', () => cursor.classList.add('click'));
+            document.addEventListener('mouseup', () => cursor.classList.remove('click'));
+            
+            document.addEventListener('click', (e) => {
+                for (let i = 0; i < 8; i++) {
+                    const sparkle = document.createElement('div');
+                    sparkle.className = 'cursor-sparkle';
+                    sparkle.style.left = e.clientX + 'px';
+                    sparkle.style.top = e.clientY + 'px';
+                    const angle = (i / 8) * Math.PI * 2;
+                    const velocity = 50;
+                    sparkle.style.transform = `translate(-50%, -50%) translate(${Math.cos(angle) * velocity}px, ${Math.sin(angle) * velocity}px)`;
+                    document.body.appendChild(sparkle);
+                    setTimeout(() => sparkle.remove(), 600);
+                }
+            });
         }
-        animateCursor();
         
-        const hoverElements = document.querySelectorAll('a, button, .btn-small, .animal-card, .project-card');
-        hoverElements.forEach(el => {
-            el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-            el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-        });
-        
-        document.addEventListener('mousedown', () => cursor.classList.add('click'));
-        document.addEventListener('mouseup', () => cursor.classList.remove('click'));
-        
-        document.addEventListener('click', (e) => {
-            for (let i = 0; i < 8; i++) {
-                const sparkle = document.createElement('div');
-                sparkle.className = 'cursor-sparkle';
-                sparkle.style.left = e.clientX + 'px';
-                sparkle.style.top = e.clientY + 'px';
-                const angle = (i / 8) * Math.PI * 2;
-                const velocity = 50;
-                sparkle.style.transform = `translate(-50%, -50%) translate(${Math.cos(angle) * velocity}px, ${Math.sin(angle) * velocity}px)`;
-                document.body.appendChild(sparkle);
-                setTimeout(() => sparkle.remove(), 600);
-            }
-        });
-        
+        // Particles for all devices
         const particlesContainer = document.getElementById('particles');
         for (let i = 0; i < 50; i++) {
             const particle = document.createElement('div');
